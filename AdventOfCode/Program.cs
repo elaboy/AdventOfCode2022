@@ -12,10 +12,25 @@ namespace AdventOfCode
 
         static void Main(string[] args)
         {
+            Day1Processing(); 
+        }
 
-            string cookie = ReadCookie(); 
-            byte[] buffer = GetInput(1, 2021, cookie).Result;
-            Console.WriteLine(Encoding.UTF8.GetString(buffer)); 
+        static void Day1Processing()
+        {
+            string dataPath = "Day1Data.txt";
+            using var reader = new StreamReader(dataPath);
+            string data = reader.ReadToEnd();
+
+            foreach (var i in data)
+            {
+                Console.WriteLine(i);
+            }
+            //Console.WriteLine(data[0]);
+            //string line;
+
+
+
+            
         }
         /// <summary>
         /// Get the input from the input url depending on day, year and the cookie. Writes to a file in bin. 
