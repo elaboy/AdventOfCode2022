@@ -12,14 +12,14 @@ namespace AdventOfCode
             var watch = new System.Diagnostics.Stopwatch();
 
             watch.Start();
-            Day1Processing(); 
-            Day2Processing();
+            //Day1ProcessingOne(); 
+            //Day2Processing();
             watch.Stop();
             Console.WriteLine($"Execution Time: {watch.ElapsedMilliseconds} ms");
 
         }
 
-    static void Day1Processing()
+    static void Day1ProcessingOne()
         {
             int elfCalories = 0;
             
